@@ -4,7 +4,8 @@ import Clock from './Clock';
 
 const App = () =>
 {
-    return (
+    return ([
+        <h1>Timezones</h1>,
         <section className="container">
             {Clock("Africa/Abidjan")}
             {Clock("Africa/Accra")}
@@ -427,7 +428,7 @@ const App = () =>
             {Clock("Pacific/Wake")}
             {Clock("Pacific/Wallis")}
         </section>
-    )
+    ])
 };
 
 
