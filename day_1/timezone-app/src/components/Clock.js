@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const DayPart = (hour = 1) => 
 {
     hour = parseInt(hour);
@@ -14,17 +13,15 @@ const DayPart = (hour = 1) =>
     return "overnight"
 }
 
-
-
-const Clock = (timezone = "Australia/Sydney") =>
+const Clock = (props) =>
 {
     let date = new Date();
 
-    let hour      = date.toLocaleTimeString("en-AU", { timeZone: timezone, hour12: false, hour: '2-digit' });
-    let localDate = date.toLocaleDateString("en-AU", { timeZone: timezone,  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'  });
-    let localTime = date.toLocaleTimeString("en-AU", { timeZone: timezone });
-    let continent = timezone.split("/")[0];
-    let city      = timezone.split("/")[1].replace(/_/g, " ");
+    let hour      = date.toLocaleTimeString("en-AU", { timeZone: props.timezone, hour12: false, hour: '2-digit' });
+    let localDate = date.toLocaleDateString("en-AU", { timeZone: props.timezone,  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'  });
+    let localTime = date.toLocaleTimeString("en-AU", { timeZone: props.timezone });
+    let continent = props.timezone.split("/")[0];
+    let city      = props.timezone.split("/")[1].replace(/_/g, " ");
     
     return (
         <div className="clock" data-daypart={DayPart(hour)} style={{ order: hour }}>
