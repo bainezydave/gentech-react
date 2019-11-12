@@ -1,0 +1,44 @@
+
+.task {
+    width: 350px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px rgba(0,0,0,.3);
+}
+
+.task .title {
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+/* .task .content {
+    
+} */
+
+#newTask {
+    border: dashed 2px gray;
+    background-color: #eee;
+    box-shadow: none;
+}
+
+#newTask input {
+    width: 200px;
+    height: 25px;
+    border: solid 1px gray;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 0 5px;
+    outline: none;
+}
+
+#newTask #newContent {
+    width: 250px;
+}
+
+#newTask button {
+    padding: 4px;
+    border-radius: 3px;
+    outline: none;
+}

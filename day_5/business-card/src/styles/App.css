@@ -1,0 +1,93 @@
+form {
+    width: 510px;
+    border: solid 1px #000;
+    border-radius: 3px;
+    margin: 20px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: solid 1px gray;
+    color: #636060;
+}
+
+.text-field {
+    height: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.text-field label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: inline-block;
+    width: 120px;
+    color: #636060;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.text-field input {
+    width: 200px;
+    height: 25px;
+    margin: 20px;
+    padding: 5px;
+    border: solid 1px gray;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.btn-field {
+    height: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-field button {
+    width: 212px;
+    height: 37px;
+    margin: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #1a80d2;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#card {
+    display: inline-block;
+    border: solid 1px #000;
+    border-radius: 3px;
+    width: 400px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#card #header {
+    height: 60px;
+    background-color: #2C3F4F;
+    color: #fff;
+    padding: 20px;
+    font-size: 28px;
+}
+
+#card #content {
+    padding: 20px;
+    color: #636060;
+}
+
+#card #content div {
+    margin: 10px;
+    font-size: 18px;
+    border-bottom: solid 1px gray;
+}
+
+#card #content div.short {
+    display: inline-block;
+    width: calc(50% - 20px);
+}
